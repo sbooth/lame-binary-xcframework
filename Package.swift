@@ -6,8 +6,9 @@ import PackageDescription
 let package = Package(
 	name: "lame-binary-xcframework",
 	platforms: [
-		.macOS(.v10_15),
-		.iOS(.v14),
+		.macOS(.v11),
+		.iOS(.v15),
+		.tvOS(.v15),
 	],
 	products: [
 		// Products define the executables and libraries a package produces, making them visible to other packages.
@@ -22,7 +23,7 @@ let package = Package(
 		// Targets can depend on other targets in this package and products from dependencies.
 		.binaryTarget(
 			name: "lame",
-			url: "https://github.com/sbooth/lame-binary-xcframework/releases/download/0.1.0/lame.xcframework.zip",
-			checksum: "d047bfc24bce458ba80b4ef1bda190deaaf5eeb410414412925b342411f1888b"),
+			url: "https://github.com/sbooth/lame-binary-xcframework/releases/download/0.1.1/lame.xcframework.zip",
+			checksum: "3ad128367bf5429c9b70e3ab483398b8e23724da9092e3cda5707aace318fa2f"),
 	]
 )
